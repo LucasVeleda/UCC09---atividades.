@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+
+        .container {
+            display: flex; /*permite um container flexivel*/
+            flex-wrap: wrap; /*permite que os itens quebrem para próxima linha*/
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+             /*Espaça os itens igualmente, igualmente na horizontal*/
+
+        }
+
+        .item {
+            background-color: greenyellow;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            flex: 1;
+            box-shadow: 0 4px 8px black;
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover{
+            transform: scale(1.05);
+        }
+
+        /*FlexBox em CSS facilita a criação de layouts flexíveis e responsivos
+        Ele serve principalmente para organizar e alinhar os elementos de uma página, 
+        distribuindo o espaço entre eles de forma eficiente, mesmo quando o 
+        tamanho dos itens ou da tela varia. FlexVox permite um alinhamento vertical
+        e horizontal de maneira simples, controla o espaçamento entre os elementos, 
+        distribuindo automaticamente, além de redimencionar os itens, 
+        centralização fácil e controle da ordem de cada item*/
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+</body>
+
+</html>

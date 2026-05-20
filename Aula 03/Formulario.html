@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+      <h1>Formulários</h1>
+ 
+    <form>
+        <label for="pNome">primeiro nome:</label>
+        <input type="text" id="pNome" name="pNome" placeholder="Insira seu primeiro nome">
+        <br>
+        <br>
+ 
+        <!--Tipo Raio-->
+        <label>
+            <strong> Qual seu nivel de programador </strong>
+        </label><br>
+ 
+        <label>
+            <input type="radio" name="nivel" valor="iniciante" checked> Iniciante
+        </label>
+ 
+        <label>
+            <input type="radio" name="nivel" valor="Médio" checked> Intermediário
+        </label>
+ 
+        <label>
+            <input type="radio" name="nivel" valor="Avançado" checked> Avançado
+        </label>
+        <br><br>
+ 
+        <!--tipo para selecionar itens-->
+        <label for="escolaridade"><strong>Sua escolaridade</strong></label>
+        <select id="escolaridade" required>
+            <option selected disabled value="">Selecione</option>
+            <option> Educação básica </option>
+            <option> Educação Média</option>
+            <option> Educação Superior</option>
+            <option> Pós graduação</option>
+            <option> Outros </option>
+        </select>
+        <br><br>
+ 
+        <!--tipo CheckBox-->
+        <label>
+            <strong>Selecione as tecnologias que você conhece:</strong>
+        </label>
+        <br>
+ 
+        <input type="checkbox" id="tecnologia1" name=" tecnologia1" value="HTML">
+        <label for="tecnologia1">HTML</label><br>
+ 
+        <input type="checkbox" id="tecnologia2" name=" tecnologia2" value="CSS">
+        <label for="tecnologia1">CSS</label><br>
+ 
+        <input type="checkbox" id="tecnologia3" name=" tecnologia3" value="JavaScript">
+        <label for="tecnologia1">JavaScript</label><br><br>
+ 
+        <!--Formulario para envio de arquivo-->
+        <form action="/upload-arquivo" method="post" enctype="multipart/form-data">
+            <label for="arquivo">Escolha um arquivo</label>
+            <input type="file" id="arquivo" required><br><br>
+       
+ 
+         <!--formulario com data-->
+         <label for = "nascimento">Data nascimento</label><br>
+         <input type = "date" name = "nascimento" id="nascimento">
+         <br><br>
+ 
+         <!--Botao de envio-->
+         <input  type="submit" value="Enviar"><br>
+        </form>
+    </form>
+
+    <!--Formulario de Agendamento-->
+    <form action="Processar formulário" method="post">
+        <fieldset>
+            <legend> Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" id="email" name="email">
+        </fieldset><br><br>      
+    </form>
+
+    <!-- Limitação de caracter -->
+     <form 
+    
+</body>
+</html>
